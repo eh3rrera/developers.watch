@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Developers.watch - Movies, documentaries, and tv series every developer should watch" />
+	<meta name="keywords" content="thumbnails, grid, preview, google image search, jquery, image grid, expanding, preview, portfolio" />
+	<meta name="author" content="Esteban Herrera" />
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/jquery.remodal.css">
+	<link rel="stylesheet" href="css/nivo-lightbox.css">
+	<link rel="stylesheet" href="css/nivo-themes/default/default.css">
+	<link rel="stylesheet" href="css/component.css" />
+	<link rel="stylesheet" href="css/style.css">
+	
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+	<title>Developers.watch</title>
+</head>
+<body>
+	<header class="cd-header">
+		<h1>Developers.watch</h1>
+		Movies, documentaries, and tv series every developer should watch
+	</header>
+
+	<main class="cd-main-content">
+		<div class="cd-tab-filter-wrapper">
+			<div class="cd-tab-filter">
+				<!--<ul class="cd-filters">
+					<li class="filter"><a href="#0" data-type="all">All</a></li>
+				</ul> <!-- cd-filters -->
+			</div> <!-- cd-tab-filter -->
+		</div> <!-- cd-tab-filter-wrapper -->
+
+		<section class="cd-gallery">
+			<ul id="og-grid" class="og-grid">
+				<li class="mix movie">
+					<a href="#" data-largesrc="images/pirates.jpg" 
+								data-title="Pirates of Silicon Valley" 
+								data-trailer="http://www.youtube.com/watch?v=lEyrivrjAuU" 
+								data-imdb="http://www.imdb.com/title/tt0168122/" 
+								data-rt="http://www.rottentomatoes.com/m/pirates_of_silicon_valley/" 
+								data-amazon="" 
+								data-netflix="" 
+								data-itunes="" 
+								data-official="" 
+								data-buy="http://www.amazon.com/gp/product/B0009NSCS0/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B0009NSCS0&linkCode=as2&tag=devwatch-20&linkId=GL4673XYFLNE5OMD" 
+								data-youtube=""
+								data-description="It follows the rise of the home computer (PC) through the rivalry between Apple Computer and Microsoft, starring Anthony Michael Hall as Bill Gates and Noah Wyle as Steve Jobs.">
+						<img src="images/thumbs/pirates.jpg" alt="Pirates of Silicon Valley"/>
+					</a>
+				</li>
+				<li class="mix documentary">
+					<a href="#" data-largesrc="images/revolution-os.jpg" data-title="Revolution OS" data-trailer="" data-imdb="#" data-rt="#" data-mc= "#" data-amazon="" data-netflix="" data-itunes="" data-official="" data-buy="" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+						<img src="images/thumbs/revolution-os.jpg" alt="Revolution OS"/>
+					</a>
+				</li>
+				<li class="mix documentary">
+					<a href="#" data-largesrc="images/code-rush.jpg" data-title="Code Rush" data-trailer="" data-imdb="#" data-rt="#" data-mc= "#" data-amazon="" data-netflix="" data-itunes="" data-official="" data-buy="" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+						<img src="images/thumbs/code-rush.jpg" alt="Code Rush"/>
+					</a>
+				</li>
+				<li class="mix movie">
+					<a href="#" data-largesrc="images/the-internship.jpg" data-title="The Internship" data-trailer="" data-imdb="#" data-rt="#" data-mc= "#" data-amazon="" data-netflix="" data-itunes="" data-official="" data-buy="" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+						<img src="images/thumbs/the-internship.jpg" alt="The Internship"/>
+					</a>
+				</li>
+				<li class="mix tv">
+					<a href="#" data-largesrc="images/halt-catch.jpg" data-title="Halt and Catch Fire" data-trailer="" data-imdb="#" data-rt="#" data-mc= "#" data-amazon="" data-netflix="" data-itunes="" data-official="" data-buy="" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+						<img src="images/thumbs/halt-catch.jpg" alt="Halt and Catch Fire"/>
+					</a>
+				</li>
+				<li class="mix documentary">
+					<a href="#" data-largesrc="images/indie-game.jpg" data-title="Indie Game" data-trailer="" data-imdb="#" data-rt="#" data-mc= "#" data-amazon="" data-netflix="" data-itunes="" data-official="" data-buy="" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+						<img src="images/thumbs/indie-game.jpg" alt="Indie Game"/>
+					</a>
+				</li>
+				<li class="mix">
+					<a href="#" data-largesrc="images/social-network.jpg" data-title="Social Network" data-trailer="" data-imdb="#" data-rt="#" data-mc= "#" data-amazon="" data-netflix="" data-itunes="" data-official="" data-buy="" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+						<img src="images/thumbs/social-network.jpg" alt="Social Network"/>
+					</a>
+				</li>
+				<li class="mix documentary">
+					<a href="#" data-largesrc="images/ae-silicon-valley.jpg" 
+								data-title="American Experience: Silicon Valley" 
+								data-trailer="" 
+								data-imdb="" 
+								data-rt="" 
+								data-amazon="" 
+								data-netflix="" 
+								data-itunes="" 
+								data-official="" 
+								data-buy="" 
+								data-youtube=""
+								data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+						<img src="images/thumbs/ae-silicon-valley.jpg" alt="American Experience: Silicon Valley"/>
+					</a>
+				</li>
+				<li class="mix documentary">
+					<a href="#" data-largesrc="images/lost-interview.jpg" 
+								data-title="Steve Jobs: The Lost Interview" 
+								data-trailer="" 
+								data-imdb="" 
+								data-rt="" 
+								data-amazon="" 
+								data-netflix="" 
+								data-itunes="" 
+								data-official="" 
+								data-buy="" 
+								data-youtube=""
+								data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+						<img src="images/thumbs/lost-interview.jpg" alt="Steve Jobs: The Lost Interview"/>
+					</a>
+				</li>
+				<li class="mix documentary">
+					<a href="#" data-largesrc="images/internet-own-boy.jpg" 
+								data-title="The Internet's Own Boy" 
+								data-trailer="" 
+								data-imdb="" 
+								data-rt="" 
+								data-amazon="" 
+								data-netflix="" 
+								data-itunes="" 
+								data-official="" 
+								data-buy="" 
+								data-youtube=""
+								data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+						<img src="images/thumbs/internet-own-boy.jpg" alt="The Internet's Own Boy"/>
+					</a>
+				</li>
+				<li class="mix">
+					<a href="#" data-largesrc="images/office-space.jpg" data-title="Office Space" data-trailer="" data-imdb="#" data-rt="#" data-mc= "#" data-amazon="" data-netflix="" data-itunes="" data-official="" data-buy="" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+						<img src="images/thumbs/office-space.jpg" alt="Office Space"/>
+					</a>
+				</li>
+				<li class="mix">
+					<a href="#" data-largesrc="images/hackers.jpg" data-title="Hackers" data-trailer="" data-imdb="#" data-rt="#" data-mc= "#" data-amazon="" data-netflix="" data-itunes="" data-official="" data-buy="" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+						<img src="images/thumbs/hackers.jpg" alt="Hackers"/>
+					</a>
+				</li>
+				<li class="mix documentary">
+					<a href="#" data-largesrc="images/legion.jpg" 
+								data-title="We Are Legion: The Story of the Hacktivists" 
+								data-trailer="" 
+								data-imdb="" 
+								data-rt="" 
+								data-amazon="" 
+								data-netflix="" 
+								data-itunes="" 
+								data-official="" 
+								data-buy="" 
+								data-youtube=""
+								data-description="An intimate look inside the world of Anonymous, the radical \"hacktivist\" collective that has redefined civil disobedience for the digital age.">
+						<img src="images/thumbs/legion.jpg" alt="We Are Legion: The Story of the Hacktivists"/>
+					</a>
+				</li>
+				<li class="mix">
+					<a href="#" data-largesrc="images/war-games.jpg" data-title="War Games" data-trailer="" data-imdb="#" data-rt="#" data-mc= "#" data-amazon="" data-netflix="" data-itunes="" data-official="" data-buy="" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+						<img src="images/thumbs/war-games.jpg" alt="War Games"/>
+					</a>
+				</li>
+				<li class="mix">
+					<a href="#" data-largesrc="images/imitation-game.jpg" data-title="The Imitation Game" data-trailer="" data-imdb="#" data-rt="#" data-mc= "#" data-amazon="" data-netflix="" data-itunes="" data-official="" data-buy="" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+						<img src="images/thumbs/imitation-game.jpg" alt="The Imitation Game"/>
+					</a>
+				</li>
+				<li class="mix">
+					<a href="#" data-largesrc="images/ghost-shell.jpg" data-title="Ghost in the Shell 2.0" data-trailer="" data-imdb="#" data-rt="#" data-mc= "#" data-amazon="" data-netflix="" data-itunes="" data-official="" data-buy="" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+						<img src="images/thumbs/ghost-shell.jpg" alt="Ghost in the Shell 2.0"/>
+					</a>
+				</li>
+				<li class="mix documentary">
+					<a href="#" data-largesrc="images/tpb.jpg" 
+								data-title="TPB AFK: The Pirate Bay Away From Keyboard" 
+								data-trailer="" 
+								data-imdb="" 
+								data-rt="" 
+								data-amazon="" 
+								data-netflix="" 
+								data-itunes="" 
+								data-official="" 
+								data-buy="" 
+								data-youtube=""
+								data-description="It's the day before the trial starts. Fredrik packs a computer into a rusty old Volvo. Along with his Pirate Bay co-founders, he faces $13 million in damage claims to Hollywood in a copyright infringement case. Fredrik is on his way to install a new computer in the secret server hall. This is where the world's largest file sharing site is hidden. When the hacker prodigy Gottfrid, the internet activist Peter and the network nerd Fredrik are found gulity, they are confronted with the reality of life offline - away from the keyboard. But deep down in the dark data centres, clandestine computers quietly continue to duplicate files.">
+						<img src="images/thumbs/tpb.jpg" alt="TPB AFK: The Pirate Bay Away From Keyboard"/>
+					</a>
+				</li>
+				<li class="mix">
+					<a href="#" data-largesrc="images/travelling-salesman.jpg" data-title="The Travelling Salesman" data-trailer="" data-imdb="#" data-rt="#" data-mc= "#" data-amazon="" data-netflix="" data-itunes="" data-official="" data-buy="" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+						<img src="images/thumbs/travelling-salesman.jpg" alt="The Travelling Salesman"/>
+					</a>
+				</li>
+				<li class="mix">
+					<a href="#" data-largesrc="images/live-free.jpg" data-title="Live Free Die Hard" data-trailer="" data-imdb="#" data-rt="#" data-mc= "#" data-amazon="" data-netflix="" data-itunes="" data-official="" data-buy="" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+						<img src="images/thumbs/live-free.jpg" alt="Live Free Die Hard"/>
+					</a>
+				</li>
+				<li class="mix documentary">
+					<a href="#" data-largesrc="images/ctrl-alt-compete.jpg" 
+								data-title="CTRL+ALT+COMPLETE" 
+								data-trailer="" 
+								data-imdb="" 
+								data-rt="" 
+								data-amazon="" 
+								data-netflix="" 
+								data-itunes="" 
+								data-official="" 
+								data-buy="" 
+								data-youtube=""
+								data-description="This documentary, produced by Microsoft, takes a revealing look at the startup and emerging business scene through the eyes of 5 founders and their teams and tells a story of the passion, fortitude and insanity that is bringing a startup to life.">
+						<img src="images/thumbs/ctrl-alt-compete.jpg" alt="CTRL+ALT+COMPLETE"/>
+					</a>
+				</li>
+				<li class="mix tv">
+					<a href="#" data-largesrc="images/betas.jpg" 
+								data-title="Betas" 
+								data-trailer="" 
+								data-imdb="" 
+								data-rt="" 
+								data-amazon="" 
+								data-netflix="" 
+								data-itunes="" 
+								data-official="" 
+								data-buy="" 
+								data-youtube=""
+								data-description="Trey and his guys have an app, and a plan - now they need an investor. It's party-crashing time.">
+						<img src="images/thumbs/betas.jpg" alt="Betas"/>
+					</a>
+				</li>
+				<li class="mix tv">
+					<a href="#" data-largesrc="images/silicon-valley.jpg" 
+								data-title="Silicon Valley" 
+								data-trailer="" 
+								data-imdb="" 
+								data-rt="" 
+								data-amazon="" 
+								data-netflix="" 
+								data-itunes="" 
+								data-official="" 
+								data-buy="" 
+								data-youtube=""
+								data-description="Hackers do laundry. Hackers like pie. Hackers could be your friends, your neighbors, your brother, your uncle, and they are people just like you!">
+						<img src="images/thumbs/silicon-valley.jpg" alt="Silicon Valley"/>
+					</a>
+				</li>
+				<li class="mix">
+					<a href="#" data-largesrc="images/pixar-story.jpg" data-title="The Pixar Story" data-trailer="" data-imdb="#" data-rt="#" data-mc= "#" data-amazon="" data-netflix="" data-itunes="" data-official="" data-buy="" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+						<img src="images/thumbs/pixar-story.jpg" alt="The Pixar Story"/>
+					</a>
+				</li>
+				<li class="mix documentary">
+					<a href="#" data-largesrc="images/code-2600.jpg" 
+								data-title="Code 2600" 
+								data-trailer="" 
+								data-imdb="" 
+								data-rt="" 
+								data-amazon="" 
+								data-netflix="" 
+								data-itunes="" 
+								data-official="" 
+								data-buy="" 
+								data-youtube=""
+								data-description="Code 2600 documents the rise of the Information Technology Age as told through the events and people who helped to build and manipulate it. The film explores the impact of this new and growing connectivity on our human relations, personal privacy, and security as individuals and as a society.">
+						<img src="images/thumbs/code-2600.jpg" alt="Code 2600"/>
+					</a>
+				</li>
+				<li class="mix documentary">
+					<a href="#" data-largesrc="images/triumph-nerds.jpg" 
+								data-title="Triumph of the Nerds" 
+								data-trailer="" 
+								data-imdb="" 
+								data-rt="" 
+								data-amazon="" 
+								data-netflix="" 
+								data-itunes="" 
+								data-official="" 
+								data-buy="" 
+								data-youtube=""
+								data-description="Triumph of the Nerds is one of the best documentaries about the origins and development of personal computers from their beginnings in the mid-70's to the mid-90's with the launch of Windows 95.">
+						<img src="images/thumbs/triumph-nerds.jpg" alt="Triumph of the Nerds"/>
+					</a>
+				</li>
+				<li class="mix">
+					<a href="#" data-largesrc="images/nerds2.jpg" data-title="Nerds 2.0.1" data-trailer="" data-imdb="#" data-rt="#" data-mc= "#" data-amazon="" data-netflix="" data-itunes="" data-official="" data-buy="" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+						<img src="images/thumbs/nerds2.jpg" alt="Nerds 2.0.1"/>
+					</a>
+				</li>
+				<li class="mix">
+					<a href="#" data-largesrc="images/tetris.jpg" data-title="Tetris: From Russia with Love" data-trailer="" data-imdb="#" data-rt="#" data-mc= "#" data-amazon="" data-netflix="" data-itunes="" data-official="" data-buy="" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+						<img src="images/thumbs/tetris.jpg" alt="Tetris: From Russia with Love"/>
+					</a>
+				</li>
+				<li class="mix documentary">
+					<a href="#" data-largesrc="images/hackers-people.jpg" 
+								data-title="Hackers Are People Too" 
+								data-trailer="" 
+								data-imdb="" 
+								data-rt="" 
+								data-amazon="" 
+								data-netflix="" 
+								data-itunes="" 
+								data-official="" 
+								data-buy="" 
+								data-youtube=""
+								data-description="Hackers do laundry. Hackers like pie. Hackers could be your friends, your neighbors, your brother, your uncle, and they are people just like you!">
+						<img src="images/thumbs/hackers-people.jpg" alt="Hackers Are People Too"/>
+					</a>
+				</li>
+				<li class="mix">
+					<a href="#" data-largesrc="images/hello-world-processing.jpg" data-title="Hello World: Processing" data-trailer="" data-imdb="#" data-rt="#" data-mc= "#" data-amazon="" data-netflix="" data-itunes="" data-official="" data-buy="" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+						<img src="images/thumbs/hello-world-processing.jpg" alt="Hello World: Processing"/>
+					</a>
+				</li>
+			</ul>
+			<div class="cd-fail-message">No results found</div>
+		</section> <!-- cd-gallery -->
+
+		<div class="cd-filter">
+			<form>
+				<div class="cd-filter-block">
+					<h4>Streaming Services</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".netflix" type="checkbox" id="checkbox1">
+			    			<label class="checkbox-label" for="checkbox1">Netflix</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".amazonPrime" type="checkbox" id="checkbox2">
+							<label class="checkbox-label" for="checkbox2">Amazon Prime</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".youtube" type="checkbox" id="checkbox3">
+							<label class="checkbox-label" for="checkbox3">Youtube</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="cd-filter-block">
+					<h4>Type</h4>
+
+					<div class="cd-filter-content">
+						<div class="cd-select cd-filters">
+							<select class="filter" name="selectThis" id="selectThis">
+								<option value="">All</option>
+								<option value=".movie">Movies</option>
+								<option value=".documentary">Documentaries</option>
+								<option value=".tv">Tv Series</option>
+							</select>
+						</div> <!-- cd-select -->
+					</div> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+			</form>
+
+			<a href="#0" class="cd-close">Close</a>
+		</div> <!-- cd-filter -->
+
+		<a href="#0" class="cd-filter-trigger">Filters</a>
+		<a href="#faq" class="menu-options">FAQ</a>
+	</main> <!-- cd-main-content -->
+	
+	<footer>
+		<div id="footerContent">
+
+			<div id="social">
+			<span id="likeUs">Like Developers.watch?</span>&nbsp;&nbsp;
+			<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fdevelopers.watch%2F&amp;width=100&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21&amp;appId=305946429453050" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:114px; height:20px;" allowtransparency="true"></iframe>
+			&nbsp;
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://developers.watch" data-text="Developers.watch - Movies, documentaries, and tv series every developer should watch" data-via="eh3rrera">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			</div>
+
+			<div id="madeBy">Made by <a href="https://twitter.com/eh3rrera" target="_blank"> Esteban Herrera</a></div>
+
+		</div>
+	</footer>
+	
+	<div class="remodal" data-remodal-id="faq">
+		<h1>FAQ</h1>
+		<p>&nbsp;</p>
+		<p>
+		  Flat, responsive, lightweight, fast, easy customizable modal window plugin
+		  with declarative state notation and hash tracking.
+		</p>
+		<p>&nbsp;</p>
+	</div>
+	
+	
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.remodal.min.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/grid.js"></script>
+<script>
+	$(function() {
+		Grid.init();
+	});
+</script>
+</body>
+</html>
